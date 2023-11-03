@@ -1,9 +1,3 @@
-<?php
-session_start();
-if(empty($_SESSION['email']))
-{
-?>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -61,7 +55,7 @@ if(empty($_SESSION['email']))
       </td>
   </tr>
             <tr>
-                <td colspan="2" align="center"><input type="submit" style="width: 4em;  height: 2em; font-size: 20px;" name="register" value="Submit" /></td>
+                <td colspan="2" align="center"><a href="#"></a><input type="submit" style="width: 4em;  height: 2em; font-size: 20px;" name="register" value="Submit" /></a></td>
             </tr>
 </table> 
 
@@ -85,12 +79,3 @@ if(empty($_SESSION['email']))
 </div>
     
 </html>
-
-<?php
-}
-else
-{
-header("location:Admin.php");
-}
-
-?>
