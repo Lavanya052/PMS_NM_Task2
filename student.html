@@ -58,7 +58,7 @@ if($role=="Admin")
   </tr>
 </table>
     <br/><br/>
-    </p><form method="post" action="st.php">
+    </p><form method="get" action="student.html">
         <div style="background-color: beige; margin-left: 25%; alignment-adjust: central; width: 50%">
             <table align="center" width="100%" cellspacing="01" cellpadding="05">
   <tr>
@@ -118,8 +118,11 @@ if($role=="Admin")
   <tr align="center" >
     <td>&nbsp;</td>
     <br/>
-    <td colspan="2"><input type="submit"  name="add" value="Add" id="bt" />
-    				
+    <td colspan="2"><input type="submit"  name="add" value="Add" id="bt" onclick="myFunction()" />
+    <script>
+function myFunction() {
+  alert("Hello! I am an alert box!");
+}	</script>
     <td>&nbsp;</td>
   </tr>
             </table> <br/><br/>  </div></form>
